@@ -1,0 +1,18 @@
+<h1>Lista de usuarios</h1>
+<hr>
+<table class="table table_striped table-dark">
+    <thead>
+        <tr>
+          <th scope="col">id</th>
+          <th scope="col">usuario</th>
+          <th scope="col">pass</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let usuario of usuarios">
+          <td>{{usuario.id}}</td>
+          <td>{{usuario.nomuser}}</td>
+          <td>{{usuario.clave}}</td>
+        </tr>
+      </tbody>
+</table>
